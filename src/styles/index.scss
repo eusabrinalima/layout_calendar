@@ -2,7 +2,10 @@ $day-size: 100px;
 $gap: 1px;
 $padding: 10px;
 $columns: 7;
-$calendar-width: (7 * 100px) + (6 * 1px) + (2 * 10px);
+$days-width: $columns * $day-size;
+$gaps-width: ($columns - 1) * $gap;
+$paddings-width: 2 * $padding;
+$calendar-width: $days-width + $gaps-width + $paddings-width;
 $days-map: (
   mon: 0,
   tue: 1,
